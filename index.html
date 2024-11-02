@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+
+        <div class="input-group">
+            <input type="text" id="location-input" placeholder="Enter city name or ZIP code">
+            <button onclick="fetchWeatherByInput()">Get Weather</button>
+            <button onclick="fetchWeatherByGeolocation()">Use My Location</button>
+        </div>
+        <div class="weather-info" id="weather-info"></div>
+        <div class="error" id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
